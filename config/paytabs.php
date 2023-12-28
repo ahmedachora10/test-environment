@@ -56,6 +56,6 @@ return [
    |
    */
 
-    'region' => env('paytabs_region', 'GLOBAL'),
+    'region' => env('paytabs_region', 'SAU'),
 
 ];
