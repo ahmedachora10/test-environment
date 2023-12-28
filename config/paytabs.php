@@ -43,7 +43,7 @@ return [
    |
    */
 
-    'currency' => env('paytabs_currency', ''),
+    'currency' => env('paytabs_currency', 'US'),
 
 
     /*
