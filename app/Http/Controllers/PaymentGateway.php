@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 class PaymentGateway extends Controller
 {
     public function payTaps() {
-        return new PayTabsService();
+        new PayTabsService();
+        return '';
     }
 }

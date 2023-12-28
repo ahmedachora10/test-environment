@@ -13,5 +13,6 @@ class PayTabsService {
             ->sendURLs('return_url', route('success'))
             ->sendLanguage('en')
             ->create_pay_page();
+        dd($pay);
     }
 }
