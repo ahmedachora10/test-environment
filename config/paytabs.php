@@ -43,7 +43,7 @@ return [
    |
    */
 
-    'currency' => env('paytabs_currency', 'EGP'),
+    'currency' => env('paytabs_currency', ''),
 
 
     /*
@@ -56,6 +56,6 @@ return [
    |
    */
 
-    'region' => env('paytabs_region', 'EGY'),
+    'region' => env('paytabs_region', 'GLOBAL'),
 
 ];
