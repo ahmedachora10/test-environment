@@ -52,6 +52,11 @@ return [
     */
 
     'channels' => [
+        'PayTabs' => [
+            'driver' => 'single',
+            'path' => storage_path('logs/paytabs.log'),
+            'level' => 'info',
+        ],
         'stack' => [
             'driver' => 'stack',
             'channels' => ['single'],

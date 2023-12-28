@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PaymentGateway;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,3 +17,14 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::controller(PaymentGateway::class)
+->prefix('payment')
+->name('payment.')
+->group(function () {
+    Route::get('paytaps', 'payTaps')->name('paytabs');
+});
+
+Route::get('success', function () {
+    return 'success';
+})->name('success');
